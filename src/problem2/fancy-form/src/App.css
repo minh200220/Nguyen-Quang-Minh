@@ -1,0 +1,36 @@
+body {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  color: black;
+  background-color: #7ca982;
+}
+
+.currency-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.error-text {
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
+
+.token-img {
+  width: 1rem;
+  height: 1rem;
+}
