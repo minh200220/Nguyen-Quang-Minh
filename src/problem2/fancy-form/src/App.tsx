@@ -12,7 +12,6 @@ function App() {
   const [isLoading, setLoading] = useState(false);
   const [isDirty, setDirty] = useState(false);
   const [tokens, setTokens] = useState<Token[] | null>(null);
-  const [tokenStrings, setTokenStrings] = useState<string[]>([]);
   const [sendCurrency, setSendCurrency] = useState<Token | null>(null);
   const [receiveCurrency, setReceiveCurrency] = useState<Token | null>(null);
   const [amount, setAmount] = useState(0);
@@ -67,7 +66,6 @@ function App() {
         }));
         console.log(tokens);
         setTokens(tokens);
-        setTokenStrings(data.map((token: Token) => token.currency));
         setSendCurrency(data[0]);
         setReceiveCurrency(data[0]);
       });
